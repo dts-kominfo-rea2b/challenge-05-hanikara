@@ -8,12 +8,12 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = (names, number) => {
   const order = number(names);
-  const nameOrder = [];
+  let nameOrder = [];
   for (let i = 0; i < order.length; i++) {
     nameOrder.push(`${i + 1}. + ${order[i]}`);
   }
   return nameOrder;
-}
+};
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
