@@ -9,7 +9,7 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 const sorter = (names, number) => {
   const order = number(names);
   const nameOrder = [];
-  for (var i = 0; i < order.length; i++) {
+  for (let i = 0; i < order.length; i++) {
     nameOrder.push(`${i + 1}. + ${order[i]}`);
   }
   return nameOrder;
@@ -17,15 +17,15 @@ const sorter = (names, number) => {
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
-const sortAscending = (nameOrder) => {
-  return nameOrder.sort();
-}
+const sortAscending = (names) => {
+  return names.sort();
+};
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
-const sortDescending = (nameOrder) => {
-  return nameOrder.sort().reverse();
-}
+const sortDescending = (names) => {
+  return names.sort().reverse();
+};
   
 // ! JANGAN DIMODIFIKASI
 (function main() {
