@@ -8,9 +8,9 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = (names, number) => {
   const order = number(names);
-  let nameOrder = [];
+  const nameOrder = [];
   for (let i = 0; i < order.length; i++) {
-    nameOrder.push(`${i + 1}. + ${order[i]}`);
+    nameOrder.push(`${i + 1}. ${order[i]}`);
   }
   return nameOrder;
 };
