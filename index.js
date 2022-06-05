@@ -10,7 +10,7 @@ const sorter = (names, number) => {
   const order = number(names);
   const nameOrder = [];
   for (var i = 0; i < order.length; i++) {
-    nameOrder[i] = `${i + 1}. + ${order[i]}`;
+    nameOrder.push(`${i + 1}. + ${order[i]}`);
   }
   return nameOrder;
 }
